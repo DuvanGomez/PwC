@@ -1,0 +1,16 @@
+<div class="row animated fadeIn">
+    <div class="col-md-12 text-center">
+  
+      <div class="btn-group  mb-3" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light" [routerLink]="['perfil']" routerLinkActive="active" >Perfil</button>
+        <button type="button" class="btn btn-light" [routerLink]="['editar']" routerLinkActive="active" >Editar</button>
+        <button type="button" class="btn btn-light" [routerLink]="['configurar']" routerLinkActive="active" >Configurar</button>
+      </div>
+  
+    </div>
+</div>
+<div class="row d-flex justify-content-center mt-4">
+  <div class="col-md-8">
+      <router-outlet></router-outlet>
+  </div>
+</div>

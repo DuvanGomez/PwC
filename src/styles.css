@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+.orange {
+    color: #EB8C00 !important;
+}
+a {
+    color: black;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.btn-salmon, .btn-salmon:active {
+    background-color: #EB8C00;
+    color: #ffffff;
+}
+.btn-salmon:hover {
+    background-color: #EB8C00;
+}
+.btn-outline-salmon {
+    border-color: #EB8C00;
+    color: #EB8C00;
+    background-color: transparent;
+}
+.btn-outline-salmon:hover {
+    border-color: #EB8C00;
+    color: #ffffff;
+    background-color: #EB8C00;
+}
+.btn-vinotinto, .background-vinotinto, .btn-vinotinto:active {
+   background-color: #5F221F;
+   color: #ffffff;
+}
+.btn-outline-vinotinto {
+    border-color: #5F221F;
+    color: #5F221F;
+    background-color: transparent;
+}
+.btn-outline-vinotinto:hover {
+    border-color: #5F221F;
+    color: #ffffff;
+    background-color: #5F221F;
+}
+.btn-escarlata, .background-escarlata, .btn-escarlata:active{
+   background-color: #A31F20;
+   color: #ffffff;
+}
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+

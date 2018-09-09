@@ -1,0 +1,13 @@
+<div class="row animated fadeIn">
+    <div class="col-md-12 text-center">
+      <div class="btn-group  mb-3" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-dark" [routerLink]="['logIn']" routerLinkActive="active" >Log In</button>
+        <button type="button" class="btn btn-dark" [routerLink]="['registro']" routerLinkActive="active">Registro</button>
+      </div>
+    </div>
+</div>
+<div class="row d-flex justify-content-center mt-4">
+  <div class="col-md-6">
+      <router-outlet></router-outlet>
+  </div>
+</div>

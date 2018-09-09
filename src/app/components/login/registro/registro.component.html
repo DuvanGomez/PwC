@@ -1,0 +1,45 @@
+<div class="container fast fadeIn">
+  <div *ngIf="alert===true"
+    [ngClass]="tipo" class="alert fast fadeIn" role="alert">
+    {{mensaje}}
+    <button (click)="alert = false"
+    type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <form novalidate>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <input [(ngModel)]="usuario.email" name="usuario.email"
+        type="email" class="form-control" placeholder="Email" #email="ngModel" required>
+      </div>
+      <div class="form-group col-md-12">
+        <input [(ngModel)]="usuario.password" name="usuario.password"
+        type="password" class="form-control" placeholder="Password" #password="ngModel" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input [(ngModel)]="usuario.firstName" name="usuario.firstName"
+        type="text" class="form-control" placeholder="Nombre" #firstName="ngModel">
+      </div>
+      <div class="form-group col-md-6">
+        <input [(ngModel)]="usuario.lastName" name="usuario.lastName"
+        type="text" class="form-control" placeholder="Apellido" #lastName="ngModel">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <input [(ngModel)]="usuario.age" name="usuario.age"
+        type="number" class="form-control" placeholder="Edad" #age="ngModel">
+      </div>
+      <div class="form-group col-md-8">
+        <input [(ngModel)]="usuario.phoneNumber" name="usuario.phoneNumber"
+        type="number" class="form-control" placeholder="Número Telefonico" #phoneNumber="ngModel">
+      </div>
+    </div>
+    <button class="btn btn-vinotinto btn-lg btn-block" 
+            (click)="guardar()"
+            >Registrar</button>
+  </form>
+</div>
