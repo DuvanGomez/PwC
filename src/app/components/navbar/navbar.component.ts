@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavbarComponent {
   index: number;
-  constructor( private _data: DataService, private router: ActivatedRoute ) {
+  constructor( public _data: DataService, private router: ActivatedRoute ) {
     this.index = JSON.parse(localStorage.getItem('token'));
     _data.existeConexion();
    }
